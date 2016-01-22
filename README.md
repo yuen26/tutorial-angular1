@@ -4,7 +4,6 @@ Hướng dẫn về framework AngularJS <br /><br />
 ### Giới thiệu
 AngularJS là một bộ Javascript Framework rất mạnh và thường được sử dụng để xây dựng project Single Page Application (SPA). Nó mở rộng HTML DOM với các thuộc tính bổ sung cho nên đáp ứng được nhiều yêu cầu từ phía người dùng. AngularJS là một Framework mã nguồn mở hoàn toàn miễn phí và được hàng ngàn các lập trình viên trên thế giới ưa chuộng và sử dụng. Angular JS hỗ trợ mô hình MVC.<br />
 Dưới đây là một số tính năng cốt lõi quan trọng của AngularJS:
-
 - Data-binding: (liên kết dữ liệu) tự động đồng bộ dữ liệu giữa model và view
 - Scope: (Phạm vi) Đây là những đối tượng kết nối giữa Controller và View
 - Controller: Đây là những hàm javascript xử lý kết hợp với bộ điều khiển Scope
