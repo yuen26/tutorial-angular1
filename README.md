@@ -50,3 +50,12 @@ _Ví dụ 2:_
 _Ví dụ 3:_
 
 [Truyền đối tượng vào $scope](https://github.com/ntaback26/angular-tutorial/blob/master/controller/object.html)
+
+### Scope
+Scope có nhiệm vụ đồng bộ dữ liệu giữa HTML (View) và Javascript (Controller). Một scope là 1 đối tượng Javascript đặc biệt bao gồm các thuộc tính và các phương thức. Các thuộc tính và phương thức này có thể được sử dụng ở cả View và Controller.<br />
+Trong mô hình MVC của AngularJS thì:
+- View chính là những đoạn mã HTML hiển thị phía người dùng
+- Model là dữ liệu phục vụ cho view hiện tại
+- Controller là những hàm Javascript có nhiệm vụ thêm, sửa, xóa, điều khiển dữ liệu
+
+Và scope chính là Model
