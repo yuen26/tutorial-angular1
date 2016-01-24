@@ -15,7 +15,8 @@ Dưới đây là một số tính năng cốt lõi quan trọng của AngularJS
 - MVC: Mô hình chia thành phần riêng biệt thành Model, View, Controller. Đây là một mô hình khá hay nhưng trong Angular thì nó được chế biến lại một chút gần giốn với MVVM (Model View View Model)
 - Deep Linking: Liên kết sâu, cho phép bạn mã hóa trạng thái của ứng dụng  trong các URL  để nó có thể đánh dấu được với công cụ tìm kiếm.
 - Dependency Injection: liên kết, thống nhất các đối tượng và chắc năng. <br /><br />
-Mối liên hệ giữa các thành phần trong AngularJS <br />
+
+### Mối liên hệ giữa các thành phần trong AngularJS <br />
 <img src="https://s3.amazonaws.com/classconnection/362/flashcards/6692362/png/screen_shot_2014-12-23_at_70514_pm-14A7A42335A47DBBC08.png" width="200">
 
 ### Cài đặt
