@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AngularJS Controller</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+	<div ng-controller="PersonCtrl">
+		First Name: {{ person.firstName }} <br />
+		Last Name: {{ person.lastName }} <br />
+		Full Name: {{ person.fullName() }}
+	</div>
+
+	<script type="text/javascript">
+		var app = angular.module('myApp', []);
+		app.controller('PersonCtrl', ['$scope', function($scope){
+			$scope.person = {
+				firstName: "Nguyen",
+				lastName: "Tuan Anh",
+				fullName: function() {
+					return this.firstName + " " + this.lastName; 
+				}
+			};
+		}]);
+	</script>
+</body>
+</html>
