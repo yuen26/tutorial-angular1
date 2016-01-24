@@ -1,0 +1,15 @@
+<html>
+<head>
+   <title>AngularJS Expressions</title>
+   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+</head>
+<body ng-app="">
+   <div ng-init="quantity = 1; cost = 30; name = {firstname:'Nguyen', lastname:'Tuan Anh'}; array = [80,90,75,73,60]">
+      <p>{{ 2 + 5 }}</p>
+      <p>Total price: {{ cost * quantity }}</p>
+      <p>{{ "Hello World!" }}</p>
+      <p>Hello {{name.firstname + " " + name.lastname}}!</p>
+      <p>Array[3]: {{ array[3] }}</p>
+   </div>
+</body>
+</html>
