@@ -5,16 +5,16 @@ Hướng dẫn về framework AngularJS <br /><br />
 AngularJS là một bộ Javascript Framework rất mạnh và thường được sử dụng để xây dựng project Single Page Application (SPA). Nó mở rộng HTML DOM với các thuộc tính bổ sung cho nên đáp ứng được nhiều yêu cầu từ phía người dùng. AngularJS là một Framework mã nguồn mở hoàn toàn miễn phí và được hàng ngàn các lập trình viên trên thế giới ưa chuộng và sử dụng. Angular JS hỗ trợ mô hình MVC.
 
 Dưới đây là một số tính năng cốt lõi quan trọng của AngularJS:
-- Data-binding: (ràng buộc dữ liệu) tự động đồng bộ dữ liệu giữa model và view
-- Scope: (Phạm vi) Đây là những đối tượng kết nối giữa Controller và View
-- Controller: Đây là những hàm javascript xử lý kết hợp với bộ điều khiển Scope
-- Service: Như tôi đề cập ở trên, AngularJS sử dụng các API được xây dựng từ các web service (PHP, ASP) để thao tác với DB.
-- Filters: Bộ lọc lọc ra các thành phẩn của một mảng và trả về mảng mới
-- Directives:  đánh dấu vào các yếu tố của DOM, nghĩa là sẽ tạo ra các thẻ HTML tùy chỉnh
+- Data-binding (Ràng buộc dữ liệu): tự động đồng bộ dữ liệu giữa model và view
+- Scope: những đối tượng kết nối Controller và View
+- Controller: lớp business logic phía sau views
+- Service: mục đích của xây dựng service là để tái sử dụng các phương thức chung ở nhiều view hoặc controller khác nhau
+- Filters (Bộ lọc): format lại dữ liệu hiển thị ra ngoài view người dùn
+- Directives: cho phép mở rộng HTML và bạn có thể custom lại các thuộc tính (attribute), phần tử (elements)
 - Templates: hiển thị thông tin từ controller, đây là một thành phần của views
-- Routing:  chuyển đổi giữa các action trong controller
-- MVC: Mô hình chia thành phần riêng biệt thành Model, View, Controller. Đây là một mô hình khá hay nhưng trong Angular thì nó được chế biến lại một chút gần giốn với MVVM (Model View View Model)
-- Deep Linking: Liên kết sâu, cho phép bạn mã hóa trạng thái của ứng dụng  trong các URL  để nó có thể đánh dấu được với công cụ tìm kiếm.
+- Routing: chuyển đổi giữa các action trong controller
+- MVW: Model-View-Whatever, từ MVW chúng ta có thể phát triển thành MVC Model-View-Controller hoặc là MVVM Model-View-ViewModel
+- Deep Linking (Liên kết sâu): cho phép bạn mã hóa trạng thái của ứng dụng trong các URL để nó có thể đánh dấu được với công cụ tìm kiếm.
 - Dependency Injection: liên kết, thống nhất các đối tượng và chắc năng.
 
 Mối liên hệ giữa các thành phần trong AngularJS <br />
