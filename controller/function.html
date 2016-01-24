@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+	<div ng-controller="HelloCtrl">
+		<h2>Hello {{ sayHello() }}</h2>
+	</div>
+
+	<script type="text/javascript">
+		var app = angular.module('myApp', []);
+		app.controller('HelloCtrl', ['$scope', function($scope){
+			$scope.sayHello = function() {
+				return "AngularJS";
+			}
+		}]);
+	</script>
+</body>
+</html>
