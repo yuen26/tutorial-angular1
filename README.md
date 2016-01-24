@@ -30,7 +30,7 @@ Expression được viết bên trong cặp dấu {{ }}
 
 [Demo Expression](https://github.com/ntaback26/angular-tutorial/blob/master/expression.html)
 
-Trong ví dụ trên, thuộc tính <kbd>ng-app</kbd> ở thẻ body là thuộc tính của AngularJS. Nó đánh dấu vị trí bắt đầu của code AngularJS. Thuộc tính <kbd>ng-init</kbd> có nhiệm vụ khởi tạo giá trị cho các biến. ng-app và ng-init được gọi là _directive (điều hướng)_ 
+**Giải thích:** thuộc tính <kbd>ng-app</kbd> ở thẻ body là thuộc tính của AngularJS. Nó đánh dấu vị trí mà code AngularJS bắt đầu có hiệu lực. Thuộc tính <kbd>ng-init</kbd> có nhiệm vụ khởi tạo giá trị cho các biến. ng-app và ng-init được gọi là _directive (điều hướng)_ 
 
 
 
