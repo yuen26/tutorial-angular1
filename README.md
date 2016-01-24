@@ -16,7 +16,7 @@ Dưới đây là một số tính năng cốt lõi quan trọng của AngularJS
 - Deep Linking: Liên kết sâu, cho phép bạn mã hóa trạng thái của ứng dụng  trong các URL  để nó có thể đánh dấu được với công cụ tìm kiếm.
 - Dependency Injection: liên kết, thống nhất các đối tượng và chắc năng. <br />
 Mối liên hệ giữa các thành phần trong AngularJS 
-![alt tag](https://s3.amazonaws.com/classconnection/362/flashcards/6692362/png/screen_shot_2014-12-23_at_70514_pm-14A7A42335A47DBBC08.png =100x20)
+![alt tag](https://s3.amazonaws.com/classconnection/362/flashcards/6692362/png/screen_shot_2014-12-23_at_70514_pm-14A7A42335A47DBBC08.png)
 
 ### Cài đặt
 Để sử dụng AngularJS trong project, bạn cần phải khai báo 1 cặp thẻ `<script></script>` chứa đường link tới file <kbd>angular.min.js</kbd>. Trong tutorial này, tôi sẽ sử dụng AngularJS phiên bản 1.5.0-rc.0. Bạn có thể tải AngularJS trên [trang chủ](https://angularjs.org/) hoặc sử dụng CDN trong cặp thẻ `<script>\</script>` như sau `<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.1/angular.min.js"></script>`.
