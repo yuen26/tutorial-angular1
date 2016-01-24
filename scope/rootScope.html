@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+	<h1><font color="{{ color }}">The rootScope's color</font></h1>
+
+	<div ng-controller="MyCtrl">
+		<h1><font color="{{ color }}">The scope's color</font></h1>
+	</div>
+
+	<h1><font color="{{ color }}">The rootScope's color not be overrided</font></h1>
+
+	<script>
+		var app = angular.module('myApp', []);
+		app.run(['$rootScope', function($rootScope) {
+		    $rootScope.color = "blue";
+		}]);
+		app.controller('MyCtrl', ['$scope', function($scope) {
+		    $scope.color = "red";
+		}]);
+	</script>
+</body>
+</html>
