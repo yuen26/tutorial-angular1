@@ -25,7 +25,7 @@ Mối liên hệ giữa các thành phần trong AngularJS <br />
 
 ## Expression - Controller - Scope
 ### Expression
-AngularJS đồng bộ dữ liệu giữa application với HTML bằng cách sử dụng _expression_. Hiểu 1 cách đơn giản, expression là dữ liệu chúng ta muốn hiển thị ra màn hình. Dữ liệu ở đây có thể là số, chuỗi, phần tử của mảng hoặc thuộc tính của đối tượng... 
+AngularJS đồng bộ dữ liệu giữa ứng dụng với HTML bằng cách sử dụng _expression_. Hiểu 1 cách đơn giản, expression là dữ liệu chúng ta muốn hiển thị ra màn hình. Dữ liệu ở đây có thể là số, chuỗi, phần tử của mảng hoặc thuộc tính của đối tượng... 
 Expression được viết bên trong cặp dấu {{ }} 
 
 [Demo Expression](https://github.com/ntaback26/angular-tutorial/blob/master/expression.html)
@@ -33,7 +33,7 @@ Expression được viết bên trong cặp dấu {{ }}
 **Giải thích:** thuộc tính <kbd>ng-app</kbd> ở thẻ body là thuộc tính của AngularJS. Nó đánh dấu vị trí mà code AngularJS bắt đầu có hiệu lực. Thuộc tính <kbd>ng-init</kbd> có nhiệm vụ khởi tạo giá trị cho các biến. ng-app và ng-init được gọi là _directive (điều hướng)_
 
 ### Controller
-Trong AngularJS, controller có nhiệm vụ chính là điều khiển dữ liệu của application. Một controller được định nghĩa bằng cách sử dụng directive <kbd>ng-controller</kbd>. Một controller là một đối tượng Javascript bao gồm các thuộc tính và các phương thức.
+Trong AngularJS, controller có nhiệm vụ chính là điều khiển dữ liệu của ứng dụng. Một controller được định nghĩa bằng cách sử dụng directive <kbd>ng-controller</kbd>. Một controller là một đối tượng Javascript bao gồm các thuộc tính và các phương thức.
 
 _Ví dụ 1:_
 
@@ -58,4 +58,11 @@ Trong mô hình MVC của AngularJS thì:
 - Model là dữ liệu phục vụ cho view hiện tại
 - Controller là những hàm Javascript có nhiệm vụ thêm, sửa, xóa, điều khiển dữ liệu
 
-Và scope chính là Model
+Và scope chính là Model. 
+
+**$rootScope**
+Nếu như $scope chỉ ảnh hưởng trong phạm vi của controller (tính từ phần tử HTML khai báo ng-controller), thì $rootScope ảnh hưởng lên toàn bộ ứng dụng (tính từ phần tử HTML khai báo ng-app).
+
+[Demo rootScope](https://github.com/ntaback26/angular-tutorial/blob/master/scope/rootScope.html)
+
+Trong ví dụ trên, ta có thể thấy nếu như $rootScope và $scope có cùng một thuộc tính cùng tên, thì ở trong div khai bái ng-controller thì thuộc tính của $scope sẽ ghi đè thuộc tính của $rootScope, nhưng ở bên ngoài div đó, thuộc tính của $rootScope sẽ không bị ghi đè.   
