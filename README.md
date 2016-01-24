@@ -21,7 +21,13 @@ Mối liên hệ giữa các thành phần trong AngularJS <br />
 <img src="https://s3.amazonaws.com/classconnection/362/flashcards/6692362/png/screen_shot_2014-12-23_at_70514_pm-14A7A42335A47DBBC08.png" width="400">
 
 ### Cài đặt
-Để sử dụng AngularJS trong project, bạn cần phải khai báo 1 cặp thẻ `<script></script>` chứa đường link tới file <kbd>angular.min.js</kbd>. Trong tutorial này, tôi sẽ sử dụng AngularJS phiên bản 1.5.0-rc.0. Bạn có thể tải AngularJS trên [trang chủ](https://angularjs.org/) hoặc sử dụng CDN trong cặp thẻ `<script>\</script>` như sau `<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.1/angular.min.js"></script>`.
+Để sử dụng AngularJS trong project, bạn cần phải khai báo 1 cặp thẻ `<script></script>` chứa đường link tới file <kbd>angular.min.js</kbd>. Trong tutorial này, tôi sẽ sử dụng AngularJS phiên bản 1.4.9 (phiên bản ổn định). Bạn có thể tải AngularJS trên [trang chủ](https://angularjs.org/) rồi giải nén, hoặc sử dụng CDN như sau `https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js`.
+
+## Expression - Controller - Scope
+### Expression
+AngularJS đồng bộ dữ liệu giữa application với HTML bằng cách sử dụng _expression_. Hiểu 1 cách đơn giản, expression là dữ liệu chúng ta muốn hiển thị ra màn hình. Dữ liệu ở đây có thể là số, chuỗi, phần tử của mảng hoặc thuộc tính của đối tượng... 
+Expression được viết bên trong cặp dấu {{ }}
+[Demo Expression](https://github.com/ntaback26/angular-tutorial/blob/master/expression.html)
 
 
 
