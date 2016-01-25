@@ -65,4 +65,4 @@ Nếu như $scope chỉ ảnh hưởng trong phạm vi của controller (tính t
 
 [Demo rootScope](https://github.com/ntaback26/angular-tutorial/blob/master/scope/rootScope.html)
 
-Trong ví dụ trên, ta có thể thấy nếu như $rootScope và $scope có cùng một thuộc tính cùng tên, thì ở trong div khai bái ng-controller thì thuộc tính của $scope sẽ ghi đè thuộc tính của $rootScope, nhưng ở bên ngoài div đó, thuộc tính của $rootScope sẽ không bị ghi đè.   
+Trong ví dụ trên, ta có thể thấy nếu như $rootScope và $scope có một thuộc tính cùng tên, thì ở trong div khai báo ng-controller, thuộc tính của $scope sẽ ghi đè thuộc tính của $rootScope, nhưng ở bên ngoài div đó, thuộc tính của $rootScope sẽ không bị ghi đè.
