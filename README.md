@@ -106,7 +106,7 @@ Directive ng-model có những nhiệm vụ sau:
 
 _Ví dụ 1: Cho 1 thẻ input, khi nhập giá trị vào input thì expression cùng tên cũng sẽ mang giá trị tương ứng_
 
-[https://github.com/ntaback26/angular-tutorial/blob/master/directive/two-way.html](Two-Way Binding)
+[Two-Way Binding](https://github.com/ntaback26/angular-tutorial/blob/master/directive/two-way.html)
 
 [Đọc thêm về Data Binding](https://docs.angularjs.org/guide/databinding)
 
