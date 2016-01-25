@@ -119,7 +119,7 @@ _Ví dụ 2: Cho 1 thẻ input, kiểm tra xem giá trị nhập vào có phải
 **2. ng-model-options**
 ng-model-options dùng để cấu hình một số thông số liên quan tới ng-model. Khi ứng dụng được chạy lên thì ng-model-options sẽ thực thi trước và sau đó ng-model mới được tạo. Các thông số bao gồm:
 - updateOn: xác định thao tác nào (blur, default, kepress, ...) sẽ quyết định việc update $scope
-- debounce: xác định khoảng thời gian sau bao lâu thì update $scope
+- debounce: xác định khoảng thời gian sau bao lâu (tính bằng milisecond) thì update $scope
 - getterSetter
 - allowInvalid
 - timezone
@@ -127,4 +127,8 @@ ng-model-options dùng để cấu hình một số thông số liên quan tới
 _Ví dụ 1: Cho 1 thẻ input, sau khi nhập giá trị, phải click chuột ra ngoài input thì expression mới thay đổi_
 
 [updateOn](https://github.com/ntaback26/angular-tutorial/blob/master/directive/updateOn.html)
+
+_Ví dụ 2: Cho 1 thẻ input, sau khi nhập giá trị, phải đợi 1s thì expression mới thay đổi_
+
+[updateOn](https://github.com/ntaback26/angular-tutorial/blob/master/directive/debounce.html)
 
