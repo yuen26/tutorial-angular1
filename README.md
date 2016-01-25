@@ -76,3 +76,9 @@ Các thuộc tính là directive thường có tiền tố **ng-** ở phía tr�
 Dựa theo chức năng, các directive có thể phân chia thành các nhóm như sau:
 
 <img src="http://image.slidesharecdn.com/dc9765ab-3c86-4477-87d5-39c277594241-150303075043-conversion-gate01/95/bdotnet-angularjs-directives-uday-7-638.jpg?cb=1425390686" width="400" />
+### Tự định nghĩa directive
+Ví dụ dưới đây sẽ định nghĩa 1 directive có nhiệm vụ render ra 1 form đăng nhập
+
+[Tự định nghĩa directive](https://github.com/ntaback26/angular-tutorial/blob/master/directive/define.html)
+
+**Giải thích:** Ta đặt tên cho directive theo kiểu camel case <kbd>myLoginForm</kbd>, khi triệu gọi directive thì ta sẽ viết tên directive theo kiểu <kbd>my-login-form</kbd>. [Đọc thêm](http://www.w3schools.com/angular/angular_directives.asp)
