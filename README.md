@@ -86,7 +86,23 @@ Ví dụ dưới đây sẽ định nghĩa 1 directive có nhiệm vụ render r
 ### Data binding
 **1. ng-model**
 
-Directive ng-model có nhiệm vụ đồng bộ giá trị của các HTML control (input, select, textarea) với dữ liệu của ứng dụng.
+Directive ng-model có những nhiệm vụ sau:
+- Đồng bộ giá trị của các HTML control (input, select, textarea) với dữ liệu của ứng dụng
+- Cung cấp các validation như required, number, email, url,...
+- Kiểm soát trạng thái của các HTML control (valid/invalid, dirty/pristine, touched/untouched, validation errors)
+- Thêm vào hoặc xóa đi các class CSS ở các HTML control dựa theo trạng thái của model. Danh sách các class:
+	- ng-valid: the model is valid
+    - ng-invalid: the model is invalid
+    - ng-valid-[key]: for each valid key added by $setValidity
+    - ng-invalid-[key]: for each invalid key added by $setValidity
+    - ng-pristine: the control hasn't been interacted with yet
+    - ng-dirty: the control has been interacted with
+    - ng-touched: the control has been blurred
+    - ng-untouched: the control hasn't been blurred
+    - ng-pending: any $asyncValidators are unfulfilled
+    - ng-empty: the view does not contain a value or the value is deemed "empty", as defined by the ngModel.NgModelController method
+    - ng-not-empty: the view contains a non-empty value
+
 
 _Ví dụ 1: Cho 1 thẻ input, khi nhập giá trị vào input thì expression cùng tên cũng sẽ mang giá trị tương ứng_
 
@@ -94,4 +110,9 @@ _Ví dụ 1: Cho 1 thẻ input, khi nhập giá trị vào input thì expression
 
 [Đọc thêm về Data Binding](https://docs.angularjs.org/guide/databinding)
 
+_Ví dụ 2: Cho 1 thẻ input, kiểm tra xem giá trị nhập vào có phải là chữ số hay không_
+
+[Input validation](https://github.com/ntaback26/angular-tutorial/blob/master/directive/input-validation)
+
+**Giải thích:** Ta thử nhập 1 chữ cái vào ô input, bật firebug lên ta sẽ thấy \<input> có thêm 1 class <kbd>ng-invalid</kbd> 
 
