@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+	<div my-login-form></div>
+
+	<script type="text/javascript">
+		var app = angular.module('myApp', []);
+		app.directive('myLoginForm', function() {
+			var html = "<form>";
+			html += "Username <input type='text' name='username' size='25' /><br />";
+			html += "Password <input type='password' name='password' size='25' /><br />";
+			html += "<input type='submit' name='ok' value='Login' />";
+			html += "</form>";
+			return {
+				template: html
+			};
+		});
+	</script>
+</body>
+</html>
