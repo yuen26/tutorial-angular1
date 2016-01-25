@@ -74,4 +74,5 @@ AngularJS cho phép chúng ta mở rộng các phần tử HTML bằng cách th�
 Các thuộc tính là directive thường có tiền tố **ng-** ở phía trước, ví dụ như: ng-app, ng-controller, ng-model, ... Danh sách các directive của AngularJS bạn có thể xem ở [đây](https://docs.angularjs.org/api/ng/directive)
 
 Dựa theo chức năng, các directive có thể phân chia thành các nhóm như sau:
+
 <img src="http://image.slidesharecdn.com/dc9765ab-3c86-4477-87d5-39c277594241-150303075043-conversion-gate01/95/bdotnet-angularjs-directives-uday-7-638.jpg?cb=1425390686" width="400" />
