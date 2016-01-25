@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+    <div ng-controller="MyCtrl">
+        Please enter any text: 
+        <input type="text" value="" ng-model="yourtext" ng-model-options="{debounce:1000}"/><br />
+        You entered: {{ yourtext }}
+    </div>
+
+    <script type="text/javascript">
+        var app = angular.module('myApp', []);
+        app.controller('MyCtrl', ['$scope', function($scope) {
+        }]);
+    </script>
+</body>
+</html>
