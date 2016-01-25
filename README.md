@@ -130,5 +130,5 @@ _Ví dụ 1: Cho 1 thẻ input, sau khi nhập giá trị, phải click chuột 
 
 _Ví dụ 2: Cho 1 thẻ input, sau khi nhập giá trị, phải đợi 1s thì expression mới thay đổi_
 
-[updateOn](https://github.com/ntaback26/angular-tutorial/blob/master/directive/debounce.html)
+[debounce](https://github.com/ntaback26/angular-tutorial/blob/master/directive/debounce.html)
 
