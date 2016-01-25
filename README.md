@@ -114,5 +114,13 @@ _Ví dụ 2: Cho 1 thẻ input, kiểm tra xem giá trị nhập vào có phải
 
 [Input validation](https://github.com/ntaback26/angular-tutorial/blob/master/directive/input-validation)
 
-**Giải thích:** Ta thử nhập 1 chữ cái vào ô input, bật firebug lên ta sẽ thấy \<input> có thêm 1 class <kbd>ng-invalid</kbd> 
+**Giải thích:** Ta thử nhập 1 chữ cái vào ô input, bật firebug lên ta sẽ thấy thẻ \<input> có thêm 1 class <kbd>ng-invalid</kbd> 
+
+**2. ng-model-options**
+ng-model-options dùng để cấu hình một số thông số liên quan tới ng-model. Khi ứng dụng được chạy lên thì ng-model-options sẽ thực thi trước và sau đó ng-model mới được tạo. Các thông số bao gồm:
+- updateOn: xác định thao tác nào (blur, default, kepress, ...) sẽ quyết định việc update $scope
+- debounce: xác định khoảng thời gian sau bao lâu thì update $scope
+- getterSetter
+- allowInvalid
+- timezone
 
