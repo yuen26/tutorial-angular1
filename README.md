@@ -124,3 +124,7 @@ ng-model-options dùng để cấu hình một số thông số liên quan tới
 - allowInvalid
 - timezone
 
+_Ví dụ 1: Cho 1 thẻ input, sau khi nhập giá trị, phải click chuột ra ngoài input thì expression mới thay đổi_
+
+[updateOn](https://github.com/ntaback26/angular-tutorial/blob/master/directive/updateOn.html)
+
