@@ -82,3 +82,16 @@ Ví dụ dưới đây sẽ định nghĩa 1 directive có nhiệm vụ render r
 [Tự định nghĩa directive](https://github.com/ntaback26/angular-tutorial/blob/master/directive/define.html)
 
 **Giải thích:** Ta đặt tên cho directive theo kiểu camel case <kbd>myLoginForm</kbd>, khi triệu gọi directive thì ta sẽ viết tên directive theo kiểu <kbd>my-login-form</kbd>. [Đọc thêm](http://www.w3schools.com/angular/angular_directives.asp)
+
+### Data binding
+**1. ng-model**
+
+Directive ng-model có nhiệm vụ đồng bộ giá trị của các HTML control (input, select, textarea) với dữ liệu của ứng dụng.
+
+_Ví dụ 1: Cho 1 thẻ input, khi nhập giá trị vào input thì expression cùng tên cũng sẽ mang giá trị tương ứng_
+
+[https://github.com/ntaback26/angular-tutorial/blob/master/directive/two-way.html](Two-Way Binding)
+
+[Đọc thêm về Data Binding](https://docs.angularjs.org/guide/databinding)
+
+
