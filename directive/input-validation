@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	.ng-invalid {
+		background: red;
+		color: white;
+	}
+	</style>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+	<div ng-controller="MyCtrl">
+		<p>Please enter only number</p>
+		<input type="text" ng-model="yourtext" ng-pattern="/^\d+$/" />
+	</div>
+
+	<script type="text/javascript">
+		var app = angular.module('myApp', []);
+		app.controller('MyCtrl', ['$scope', function($scope) {
+		}]);
+	</script>
+</body>
+</html>
