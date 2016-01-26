@@ -119,7 +119,7 @@ _Ví dụ 2: Cho 1 thẻ input, kiểm tra xem giá trị nhập vào có phải
 **2. ng-model-options**
 ng-model-options dùng để cấu hình một số thông số liên quan tới ng-model. Khi ứng dụng được chạy lên thì ng-model-options sẽ thực thi trước và sau đó ng-model mới được tạo. Các thông số bao gồm:
 - updateOn: xác định thao tác nào (blur, default, kepress, ...) sẽ quyết định việc update $scope
-- debounce: xác định khoảng thời gian sau bao lâu (tính bằng milisecond) thì update $scope
+- debounce: xác định khoảng thời gian sau bao lâu (tính bằng millisecond) thì update $scope
 - getterSetter
 - allowInvalid
 - timezone
@@ -132,3 +132,13 @@ _Ví dụ 2: Cho 1 thẻ input, sau khi nhập giá trị, phải đợi 1s thì
 
 [debounce](https://github.com/ntaback26/angular-tutorial/blob/master/directive/debounce.html)
 
+**3. ng-bind**
+
+ng-bind cũng có tác dụng giống như expression. So sánh expression và ng-bind:
+**Expression:** Thỉnh thoảng khi load ứng dụng trên trình duyệt, ta có thể thấy đoạn mã expression sẽ nhấp nháy khoảng vài millisecond trước khi dữ liệu trong expression được load. Bởi vì template được load trước khi AngularJS biên dịch các phần tử. Để giải quyết vấn đề này ta có thể sử dụng directive [ng-cloak](https://docs.angularjs.org/api/ng/directive/ngCloak)
+
+**ng-bind** được sử dụng bên trong các phần tử HTML DOM. ng-bind sẽ được thực thi ngay khi dữ liệu thay đổi.
+
+Trong [ví dụ 1](https://github.com/ntaback26/angular-tutorial/blob/master/directive/two-way.html) ở phần ng-model, thay vì sử dụng expression ta sẽ sử dụng ng-bind:
+
+[ng-bind](https://github.com/ntaback26/angular-tutorial/blob/master/directive/ng-bind.html)
