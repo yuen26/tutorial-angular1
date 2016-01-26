@@ -5,16 +5,8 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-sanitize.js"></script>
 </head>
-<body ng-app="myApp">
-	<div ng-controller="MyCtrl">
-		<input type="text" ng-model="yourtext" /><br />
-		You entered: <span ng-bind-html="yourtext"></span>
-	</div>
-
-	<script type="text/javascript">
-		var app = angular.module('myApp', ['ngSanitize']);
-		app.controller('MyCtrl', ['$scope', function($scope) {
-		}]);
-	</script>
+<body ng-app="">
+	<input type="text" ng-model="yourtext" /><br />
+	You entered: <span ng-bind-html="yourtext"></span>
 </body>
 </html>
