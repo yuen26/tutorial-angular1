@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+	<div ng-controller="MyCtrl">
+		<input type="text" ng-model="firstName" /><br />
+		<input type="text" ng-model="lastName" /><br />
+		You entered: <span ng-bind-template="{{ firstName }} {{ lastName }}"></span>
+	</div>
+
+	<script type="text/javascript">
+		var app = angular.module('myApp', ['ngSanitize']);
+		app.controller('MyCtrl', ['$scope', function($scope) {
+		}]);
+	</script>
+</body>
+</html>
