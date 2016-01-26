@@ -138,7 +138,7 @@ ng-bind cũng có tác dụng giống như expression. So sánh expression và n
 
 **Expression:** Thỉnh thoảng khi load ứng dụng trên trình duyệt, ta có thể thấy đoạn mã expression sẽ nhấp nháy khoảng vài millisecond trước khi dữ liệu trong expression được load. Bởi vì template được load trước khi AngularJS biên dịch các phần tử. Để giải quyết vấn đề này ta có thể sử dụng directive [ng-cloak](https://docs.angularjs.org/api/ng/directive/ngCloak)
 
-**ng-bind** được sử dụng bên trong các phần tử HTML DOM. ng-bind sẽ được thực thi ngay khi dữ liệu thay đổi.
+**ng-bind:** được sử dụng bên trong các phần tử HTML DOM. ng-bind sẽ được thực thi ngay khi dữ liệu thay đổi.
 
 Trong [ví dụ 1](https://github.com/ntaback26/angular-tutorial/blob/master/directive/two-way.html) ở phần ng-model, thay vì sử dụng expression ta sẽ sử dụng ng-bind: [ng-bind](https://github.com/ntaback26/angular-tutorial/blob/master/directive/ng-bind.html)
 
@@ -149,4 +149,12 @@ Directive này cho phép chúng ta in ra 1 đoạn mã HTML, điều mà ta khô
 _Ví dụ:_ Cho 1 thẻ input, nhập vào 1 đường link thì đường link đó sẽ hiện ra.
 
 [ng-bind-html](https://github.com/ntaback26/angular-tutorial/blob/master/directive/ng-bind-html.html)
+
+**5. ng-bind-template**
+
+Directive này sẽ xác định nội dung cần thay thế thông qua expression {{}} đặt trong nó. Không giống như ng-bind, ng-bind-template có thể chứa nhiều expression trong nó, ví dụ như `ng-bind-template="{{firstName}} {{lastName}}"`
+
+[ng-bind-template](https://github.com/ntaback26/angular-tutorial/blob/master/directive/ng-bind-template.html)
+
+
 
