@@ -87,7 +87,7 @@ Ví dụ dưới đây sẽ định nghĩa 1 directive có nhiệm vụ render r
 **1. ng-model**
 
 Directive ng-model có những nhiệm vụ sau:
-- Đồng bộ giá trị của các HTML control (input, select, textarea) với dữ liệu của ứng dụng
+- Đồng bộ giá trị của các HTML control (input, select, button, textarea) với dữ liệu của ứng dụng
 - Cung cấp các validation như required, number, email, url,...
 - Kiểm soát trạng thái của các HTML control (valid/invalid, dirty/pristine, touched/untouched, validation errors)
 - Thêm vào hoặc xóa đi các class CSS ở các HTML control dựa theo trạng thái của model. Danh sách các class:
@@ -154,7 +154,12 @@ _Ví dụ:_ Cho 1 thẻ input, nhập vào 1 đường link thì đường link 
 
 Directive này sẽ xác định nội dung cần thay thế thông qua expression {{}} đặt trong nó. Không giống như ng-bind, ng-bind-template có thể chứa nhiều expression trong nó, ví dụ như `ng-bind-template="{{firstName}} {{lastName}}"`
 
+_Ví dụ:_ Cho 2 thẻ input nhập vào firstName và lastName, giá trị nhập vào 2 thẻ sẽ hiển thị trong cùng 1 thẻ \<span>
+
 [ng-bind-template](https://github.com/ntaback26/angular-tutorial/blob/master/directive/ng-bind-template.html)
+
+
+### DOM Manipulation
 
 
 
