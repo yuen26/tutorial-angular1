@@ -4,16 +4,8 @@
 	<title></title>
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
 </head>
-<body ng-app="myApp">
-	<div ng-controller="MyCtrl">
-		<input type="text" ng-model="yourtext" /><br />
-		You entered: {{ yourtext }}
-	</div>
-
-	<script type="text/javascript">
-		var app = angular.module('myApp', []);
-		app.controller('MyCtrl', ['$scope', function($scope) {
-		}]);
-	</script>
+<body ng-app="">
+	<input type="text" ng-model="yourtext" /><br />
+	You entered: {{ yourtext }}
 </body>
 </html>
