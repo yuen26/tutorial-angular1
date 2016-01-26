@@ -141,3 +141,10 @@ ng-bind cũng có tác dụng giống như expression. So sánh expression và n
 **ng-bind** được sử dụng bên trong các phần tử HTML DOM. ng-bind sẽ được thực thi ngay khi dữ liệu thay đổi.
 
 Trong [ví dụ 1](https://github.com/ntaback26/angular-tutorial/blob/master/directive/two-way.html) ở phần ng-model, thay vì sử dụng expression ta sẽ sử dụng ng-bind: [ng-bind](https://github.com/ntaback26/angular-tutorial/blob/master/directive/ng-bind.html)
+
+**4. ng-bind-html**
+
+Directive này cho phép chúng ta in ra 1 đoạn mã HTML, điều mà ta không thể làm với ng-bind. Khi sử dụng ng-bind-html, ta cần phải thêm thư viện [sanitize](http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-sanitize.js)
+
+_Ví dụ:_ Cho 1 thẻ input, nhập vào 1 đường link thì đường link đó sẽ hiện ra.
+
