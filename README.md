@@ -148,3 +148,5 @@ Directive này cho phép chúng ta in ra 1 đoạn mã HTML, điều mà ta khô
 
 _Ví dụ:_ Cho 1 thẻ input, nhập vào 1 đường link thì đường link đó sẽ hiện ra.
 
+[ng-bind-html](https://github.com/ntaback26/angular-tutorial/blob/master/directive/ng-bind-html.html)
+
