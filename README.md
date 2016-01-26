@@ -135,10 +135,9 @@ _Ví dụ 2: Cho 1 thẻ input, sau khi nhập giá trị, phải đợi 1s thì
 **3. ng-bind**
 
 ng-bind cũng có tác dụng giống như expression. So sánh expression và ng-bind:
+
 **Expression:** Thỉnh thoảng khi load ứng dụng trên trình duyệt, ta có thể thấy đoạn mã expression sẽ nhấp nháy khoảng vài millisecond trước khi dữ liệu trong expression được load. Bởi vì template được load trước khi AngularJS biên dịch các phần tử. Để giải quyết vấn đề này ta có thể sử dụng directive [ng-cloak](https://docs.angularjs.org/api/ng/directive/ngCloak)
 
 **ng-bind** được sử dụng bên trong các phần tử HTML DOM. ng-bind sẽ được thực thi ngay khi dữ liệu thay đổi.
 
-Trong [ví dụ 1](https://github.com/ntaback26/angular-tutorial/blob/master/directive/two-way.html) ở phần ng-model, thay vì sử dụng expression ta sẽ sử dụng ng-bind:
-
-[ng-bind](https://github.com/ntaback26/angular-tutorial/blob/master/directive/ng-bind.html)
+Trong [ví dụ 1](https://github.com/ntaback26/angular-tutorial/blob/master/directive/two-way.html) ở phần ng-model, thay vì sử dụng expression ta sẽ sử dụng ng-bind: [ng-bind](https://github.com/ntaback26/angular-tutorial/blob/master/directive/ng-bind.html)
