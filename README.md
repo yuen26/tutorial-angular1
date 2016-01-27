@@ -232,7 +232,7 @@ Input có các thuộc tính state sau:
 - $dirty: trả về true nếu field đã bị thay đổi
 - $invalid: trả về true nếu field hợp lệ
 - $valid: trả về true nếu field hợp lệ
-- $error: đối tượng này bao gồm tất cả các thuộc tính validation (required, maxlength, minlength, ...)
+- $error: đối tượng này bao gồm tất cả các thuộc tính validation (required, pattern, maxlength, minlength, ...)
 
 Thuộc tính state của input có dạng: <kbd>formName.inputFieldName.propertyName</kbd>
 
@@ -265,3 +265,5 @@ _Ví dụ 3:_ Xây dựng 1 form đăng ký với các yêu cầu sau:
 - Input Password bắt buộc nhập, và có min length phải là 5 ký tự và max length là 8 ký tự 
 - Nếu các điều kiện validate không thỏa, thì sẽ khóa chức năng submit của Form, đồng thời xuất thông báo lỗi bên cạnh input bị lỗi
 - Nếu thỏa các điều kiện validate, sẽ hiện ra thông báo đăng ký thành công
+
+**Giải thích:** Ở trong thẻ form, ta thêm thuộc tính novalidate để ngăn HTML5 validation
