@@ -273,3 +273,14 @@ _Ví dụ 3:_ Xây dựng 1 form đăng ký với các yêu cầu sau:
 ## Filter
 Filter (bộ lọc) cho phép chúng ta định dạng dữ liệu để hiển thị trên giao diện người dùng mà không thay đổi định dạng ban đầu.
 Cú pháp của Filter: `{{expression | filterName:parameter }}`
+Danh sách các Filter:
+- currency: chuyển một số thành định dạng tiền tệ.
+- date: chuyển dữ liệu kiểu date thành string theo một định dạng nào đó.
+- filter: chọn ra một tập con các phần tử của mảng.
+- json: định dạng 1 Javascript object thành 1 JSON string.
+- limitTo: trả về 1 mảng mới từ mảng ban đầu
+- lowercase: chuyển 1 chuỗi về chữ thường.
+- number: chuyển 1 số thành 1 chuỗi
+- orderBy: sắp xếp mảng theo biểu thức.
+- uppercase: chuyển 1 chuỗi thành chữ in hoa.
+
