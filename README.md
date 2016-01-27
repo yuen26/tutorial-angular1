@@ -252,8 +252,16 @@ Dựa trên các state, AngularJS sẽ thêm vào form và input các class CSS 
 _Ví dụ 1:_ Xây dựng chương trình nhập danh sách sinh viên và lưu vào trong một mảng rồi in ra ngoài trình duyệt
 
 [list](https://github.com/ntaback26/angular-tutorial/blob/master/form/list.html)
+
 **Giải thích:** Trong ví dụ này, ta bắt sự kiện submit form bằng cách sử dụng directive ng-submit ở thẻ form
 
 _Ví dụ 2:_  Tạo 2 input và cho người dùng nhâp vào 2 số, validate bắt buộc nhập vào phải là số, đồng thời xuất ra màn hình kết quả cộng trừ nhân chia của hai số đó.
 
 [calculator](https://github.com/ntaback26/angular-tutorial/blob/master/form/calculator.html)
+
+_Ví dụ 3:_ Xây dựng 1 form đăng ký với các yêu cầu sau:
+- Input Username bắt buộc nhập, và có min length phải là 3 ký tự và max length là 8 ký tự, chỉ được chứa chữ và số
+- Input Email bắt buộc nhập, và phải nhập đúng định dạng email
+- Input Password bắt buộc nhập, và có min length phải là 5 ký tự và max length là 8 ký tự 
+- Nếu các điều kiện validate không thỏa, thì sẽ khóa chức năng submit của Form, đồng thời xuất thông báo lỗi bên cạnh input bị lỗi
+- Nếu thỏa các điều kiện validate, sẽ hiện ra thông báo đăng ký thành công
