@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+    input.ng-invalid {
+      border: 1px solid red;
+    }
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+  <div ng-controller="MyCtrl">
+    
+    <h1>FORM ĐĂNG KÝ</h1>
+   
+    <!-- FORM -->
+    <form name="myForm" ng-submit="submit()" novalidate> 
+ 
+        <!-- USERNAME -->
+        <div>
+            <label>Username</label>
+            <input type="text" name="username" ng-minlength="3" ng-maxlength="8" ng-pattern="/^[0-9a-zA-Z]+$/" ng-model="username" />
+            <p ng-show="myForm.username.$error.required" class="help-block">Username là bắt buộc.</p>
+            <p ng-show="myForm.username.$error.minlength" class="help-block">Username tối thiểu 3 ký tự.</p>
+            <p ng-show="myForm.username.$error.maxlength" class="help-block">Username tối đa 8 ký tự.</p>
+            <p ng-show="myForm.username.$error.pattern" class="help-block">Username chỉ được chứa chữ và số.</p>
+        </div>
+        
+        <!-- EMAIL -->
+        <div>
+            <label>Email</label>
+            <input type="email" name="email" ng-model="email">
+            <p ng-show="myForm.email.$error.required" class="help-block">Email là bắt buộc.</p>
+            <p ng-show="myForm.email.$invalid" class="help-block">Vui lòng nhập 1 email.</p>
+        </div>
+        
+        <!-- PASSWORD -->
+        <div>
+            <label>Password</label>
+            <input type="password" name="password" ng-minlength="5" ng-maxlength="8" ng-model="password" />
+            <p ng-show="myForm.password.$error.required" class="help-block">Password là bắt buộc.</p>
+            <p ng-show="myForm.password.$error.minlength" class="help-block">Password tối thiểu 5 ký tự.</p>
+            <p ng-show="myForm.password.$error.maxlength" class="help-block">Password tối đa 8 ký tự.</p>
+        </div>
+
+        <!-- SUBMIT BUTTON -->
+        <button type="submit" ng-disabled="myForm.username.$pristine || myForm.username.$invalid || myForm.email.$pristine || myForm.email.$invalid || myForm.password.$pristine || myForm.password.$invalid">Submit</button>
+        
+    </form>
+  </div>
+ 
+  <script>
+    var app = angular.module('myApp', []);
+    app.controller('MyCtrl', ['$scope', function($scope){
+      $scope.submit = function() {
+        if ($scope.myForm.$valid) {
+          alert('Đăng ký thành công!');
+        }
+      }
+    }]);
+  </script> 
+</body>
+</html>
