@@ -236,6 +236,8 @@ Form có các thuộc tính state sau:
 
 Thuộc tính state của form có dạng: <kbd>formName.propertyName</kbd>
 
+Dựa trên các state, AngularJS sẽ thêm vào form và input các class CSS tương ứng
+
 
 
 
