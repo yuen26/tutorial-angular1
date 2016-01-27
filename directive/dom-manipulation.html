@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+</head>
+   
+<body ng-app="">
+     <table border="0">
+        <tr>
+           <td><input type="checkbox" ng-model="disableButton">Disable Button</td>
+           <td><button ng-disabled="disableButton">Click Me!</button></td>
+        </tr>
+        
+        <tr>
+           <td><input type="checkbox" ng-model="showButton">Show Button</td>
+           <td><button ng-show="showButton">Click Me!</button></td>
+        </tr>
+        
+        <tr>
+           <td><input type="checkbox" ng-model="hideButton">Hide Button</td>
+           <td><button ng-hide="hideButton">Click Me!</button></td>
+        </tr>
+     </table>
+  </div>
+</body>
+</html>
