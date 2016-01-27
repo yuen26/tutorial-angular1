@@ -268,4 +268,7 @@ _Ví dụ 3:_ Xây dựng 1 form đăng ký với các yêu cầu sau:
 
 [Register form validation](https://github.com/ntaback26/angular-tutorial/blob/master/form/validation.html)
 
-**Giải thích:** Ở trong thẻ form, ta thêm thuộc tính novalidate để ngăn HTML5 validation
+**Giải thích:** Ở trong thẻ form, ta thêm thuộc tính novalidate để ngăn HTML5 validation <br />
+
+## Filter
+Filter (bộ lọc) cho phép chúng ta định dạng dữ liệu để hiển thị trên giao diện người dùng mà không thay đổi định dạng ban đầu.
