@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+	<div ng-controller="MyCtrl">
+		<div ng-show="showMenu">
+			<h2>Menu</h2>
+			<ul>
+				<li>Menu 1</li>
+				<li>Menu 2</li>
+				<li>Menu 3</li>
+			</ul>			
+		</div>
+		
+		<button ng-click="toggle()">Toggle</button>
+	</div>
+
+	<script type="text/javascript">
+		var app = angular.module('myApp', []);
+		app.controller('MyCtrl', ['$scope', function($scope) {
+			$scope.showMenu = false;
+			$scope.toggle = function() {
+				$scope.showMenu = !$scope.showMenu; 
+			}
+		}]);
+	</script>
+</body>
+</html>
