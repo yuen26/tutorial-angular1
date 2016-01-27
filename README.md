@@ -223,7 +223,7 @@ Input có các thuộc tính state sau:
 - $dirty: trả về true nếu field đã bị thay đổi
 - $invalid: trả về true nếu field hợp lệ
 - $valid: trả về true nếu field hợp lệ
-- $error: đối tượng này bao gồm tất cả các thuộc tính validation
+- $error: đối tượng này bao gồm tất cả các thuộc tính validation (required, maxlength, minlength, ...)
 
 Thuộc tính state của input có dạng: <kbd>formName.inputFieldName.propertyName</kbd>
 
