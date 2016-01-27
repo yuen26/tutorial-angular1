@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+	input.ng-invalid {
+		background: red;
+		color: white;
+	}
+	</style>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+	<div ng-controller="MyCtrl">
+		<form name="myForm">
+			Nhập số thứ 1: <input type="text" ng-pattern="/^\d+$/" ng-model="num1" ng-keyup="showResult()"><br />
+			Nhập số thứ 2: <input type="text" ng-pattern="/^\d+$/" ng-model="num2" ng-keyup="showResult()">
+		</form>
+		<p>Kết quả phép cộng: <span ng-bind="result.add"></span></p> 
+		<p>Kết qủa phép trừ: <span ng-bind="result.sub"></span></p>
+		<p>Kết qủa phép nhân: <span ng-bind="result.mul"></span></p>
+		<p>Kết qủa phép chia: <span ng-bind="result.div"></span></p>
+	</div>
+
+	<script type="text/javascript">
+		var app = angular.module('myApp', []);
+		app.controller('MyCtrl', ['$scope', function($scope) {
+			$scope.showResult = function() {
+				if ($scope.num1 && $scope.num2) {
+					if ($scope.myForm.$valid) {
+						var num1 = parseInt($scope.num1);
+						var num2 = parseInt($scope.num2);
+						$scope.result = {
+							add: num1 + num2,
+							sub: num1 - num2,
+							mul: num1 * num2,
+							div: num1 / num2
+						};
+					}
+				}
+			}
+		}]);
+	</script>
+</body>
+</html>
