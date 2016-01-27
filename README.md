@@ -214,5 +214,25 @@ Một vài lưu ý khi submit form:
 - Nếu form có hai thẻ input trở lên và không có button submit hoặc (input[type="submit"]) thì khi chúng ta nhấn Enter thì form sẽ không submit
 - Nếu form có một hoặc nhiều field và có một hoặc nhiều button submit hoặc (input[type="submit"]) thì khi chúng ta nhấn Enter vào một field bất kỳ, AngularJS sẽ kích hoạt sự kiện Click trên button hoặc input đầu tiên (ng-click) cũng như sự kiện submit của form (ng-submit)
 
+2. Form and Input state
+Để có thể kiểm tra dữ liệu đầu vào (validate data), AngularJs đã cung cấp cho chúng ta các **state** cho Input và Form
+Input có các state sau:
+- $untouched: trả về true nếu field chưa có tác động
+- $touched: trả về true nếu field đã bị tác động    
+- $pristine: trả về true nếu field chưa bị thay đổi
+- $dirty: trả về true nếu field đã bị thay đổi
+- $invalid: trả về true nếu field hợp lệ
+- $valid: trả về true nếu field hợp lệ
+
+Form có các state sau:
+- $pristine: trả về true nếu không có field nào bị thay đổi
+- $dirty: trả về true nếu có một hoặc nhiều field bị thay đổi
+- $invalid: trả về true nếu nội dung của form không hợp lệ
+- $valid: trả về true nếu nội dung của form hợp lệ
+- $submitted: trả về true nếu form đã được submit
+- $error: đối tượng này bao gồm tất cả các thuộc tính validation
+
+
+
 
 
