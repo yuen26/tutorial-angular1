@@ -212,7 +212,7 @@ _Ví dụ 2:_ Hiển thị ra 1 menu dọc khi click vào 1 button, và ẩn men
 Một vài lưu ý khi submit form:
 - Nếu form chỉ có một thẻ input duy nhất thì form sẽ submit khi chúng ta nhấn Enter vào thẻ input đó
 - Nếu form có hai thẻ input trở lên và không có button submit hoặc (input[type="submit"]) thì khi chúng ta nhấn Enter thì form sẽ không submit
-- Nếu form có một hoặc nhiều field và có một hoặc nhiều button submit hoặc (input[type="submit"]) thì khi chúng ta nhấn Enter vào một field bất kỳ, AngularJS sẽ kích hoạt sự kiện Click trên button hoặc input đầu tiên (ng-click)và sự kiện submit của form (ng-submit)
+- Nếu form có một hoặc nhiều field và có một hoặc nhiều button submit hoặc (input[type="submit"]) thì khi chúng ta nhấn Enter vào một field bất kỳ, AngularJS sẽ kích hoạt sự kiện Click trên button hoặc input đầu tiên (ng-click) cũng như sự kiện submit của form (ng-submit)
 
 
 
