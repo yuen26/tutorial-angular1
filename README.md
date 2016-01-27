@@ -216,21 +216,26 @@ Một vài lưu ý khi submit form:
 
 2. Form and Input state
 Để có thể kiểm tra dữ liệu đầu vào (validate data), AngularJs đã cung cấp cho chúng ta các **state** cho Input và Form
-Input có các state sau:
+Input có các thuộc tính state sau:
 - $untouched: trả về true nếu field chưa có tác động
 - $touched: trả về true nếu field đã bị tác động    
 - $pristine: trả về true nếu field chưa bị thay đổi
 - $dirty: trả về true nếu field đã bị thay đổi
 - $invalid: trả về true nếu field hợp lệ
 - $valid: trả về true nếu field hợp lệ
+- $error: đối tượng này bao gồm tất cả các thuộc tính validation
 
-Form có các state sau:
+Thuộc tính state của input có dạng: <kbd>formName.inputFieldName.propertyName</kbd>
+
+Form có các thuộc tính state sau:
 - $pristine: trả về true nếu không có field nào bị thay đổi
 - $dirty: trả về true nếu có một hoặc nhiều field bị thay đổi
 - $invalid: trả về true nếu nội dung của form không hợp lệ
 - $valid: trả về true nếu nội dung của form hợp lệ
 - $submitted: trả về true nếu form đã được submit
-- $error: đối tượng này bao gồm tất cả các thuộc tính validation
+
+Thuộc tính state của form có dạng: <kbd>formName.propertyName</kbd>
+
 
 
 
