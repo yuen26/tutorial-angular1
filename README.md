@@ -251,7 +251,7 @@ Dựa trên các state, AngularJS sẽ thêm vào form và input các class CSS 
 
 _Ví dụ 1:_ Xây dựng chương trình nhập danh sách sinh viên và lưu vào trong một mảng rồi in ra ngoài trình duyệt
 
-[list](https://github.com/ntaback26/angular-tutorial/blob/master/form/list.html)
+[Student list](https://github.com/ntaback26/angular-tutorial/blob/master/form/list.html)
 
 **Giải thích:** Trong ví dụ này, ta bắt sự kiện submit form bằng cách sử dụng directive ng-submit ở thẻ form
 
@@ -265,5 +265,7 @@ _Ví dụ 3:_ Xây dựng 1 form đăng ký với các yêu cầu sau:
 - Input Password bắt buộc nhập, và có min length phải là 5 ký tự và max length là 8 ký tự 
 - Nếu các điều kiện validate không thỏa, thì sẽ khóa chức năng submit của Form, đồng thời xuất thông báo lỗi bên cạnh input bị lỗi
 - Nếu thỏa các điều kiện validate, sẽ hiện ra thông báo đăng ký thành công
+
+[Register form validation](https://github.com/ntaback26/angular-tutorial/blob/master/form/validation.html)
 
 **Giải thích:** Ở trong thẻ form, ta thêm thuộc tính novalidate để ngăn HTML5 validation
