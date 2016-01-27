@@ -164,3 +164,9 @@ Trong AngularJS, chúng ta có 3 directive để liên kết dữ liệu của �
 - Với phần tử có chứa thuộc tính ng-disabled: sẽ được thêm thuộc tính <kbd>disabled="disabled"</kbd>
 - Với phần tử có chứa thuộc tính ng-show: sẽ xóa đi class <kbd>.ng-hide</kbd>
 - Với phần tử có chứa thuộc tính ng-hide: sẽ thêm vào class <kbd>.ng-hide</kbd>
+
+_Ví dụ:_ Cho 3 checkbox và 3 button. Khi click checkbox 1, button 1 sẽ bị disabled. Click checkbox 2, button 2 sẽ hiện ra. Click checkbox 3, button 3 sẽ bị ẩn đi.
+
+[DOM manipulation](https://github.com/ntaback26/angular-tutorial/blob/master/directive/dom-manipulation.html)
+
+**Giải thích:** Với checkbox 1 và button 1, checkbox 1 nếu chưa được tích vào thì biểu thức disableButton sẽ mang giá trị false, còn khi tích vào nó sẽ sẽ trả về giá trị true. Khi disbaleButton mang giá trị true, button 1 sẽ được thêm thuộc tính disabled="disabled". Tương tự với 2 checkbox và button còn lại.
