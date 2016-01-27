@@ -174,6 +174,7 @@ _Ví dụ:_ Cho 3 checkbox và 3 button. Khi click checkbox 1, button 1 sẽ b�
 
 ### Events
 AngularJS  cung cấp một số event directive cho phép chúng ta chạy hàm của AngularJS khi xảy ra sự kiện người dùng. Một sự kiện của AngularJS sẽ không ghi đè sự kiện tương ứng của HTML, cả 2 sự kiện sẽ được thực thi cùng nhau. 
+
 Danh sách các event directive trong angular:
 - ng-blur
 - ng-change
@@ -195,5 +196,11 @@ Danh sách các event directive trong angular:
 
 _Ví dụ 1:_ Mỗi lần click vào 1 button thì hiển thị ra số lần đã click
 
-[ng-click](https://github.com/ntaback26/angular-tutorial/blob/master/directive/ng-click.html)
+[count](https://github.com/ntaback26/angular-tutorial/blob/master/directive/ng-click.html)
+
+_Ví dụ 2:_ Hiển thị ra 1 menu dọc khi click vào 1 button, và ẩn menu đó đi khi click lần nữa.
+
+[toggle](https://github.com/ntaback26/angular-tutorial/blob/master/directive/toggle.html)
+
+
 
