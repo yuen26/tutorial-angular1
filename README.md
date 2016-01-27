@@ -170,3 +170,30 @@ _Ví dụ:_ Cho 3 checkbox và 3 button. Khi click checkbox 1, button 1 sẽ b�
 [DOM manipulation](https://github.com/ntaback26/angular-tutorial/blob/master/directive/dom-manipulation.html)
 
 **Giải thích:** Với checkbox 1 và button 1, checkbox 1 nếu chưa được tích vào thì biểu thức disableButton sẽ mang giá trị false, còn khi tích vào nó sẽ sẽ trả về giá trị true. Khi disbaleButton mang giá trị true, button 1 sẽ được thêm thuộc tính disabled="disabled". Tương tự với 2 checkbox và button còn lại.
+
+
+### Events
+AngularJS  cung cấp một số event directive cho phép chúng ta chạy hàm của AngularJS khi xảy ra sự kiện người dùng. Một sự kiện của AngularJS sẽ không ghi đè sự kiện tương ứng của HTML, cả 2 sự kiện sẽ được thực thi cùng nhau. 
+Danh sách các event directive trong angular:
+- ng-blur
+- ng-change
+- ng-click
+- ng-copy
+- ng-cut
+- ng-dblclick
+- ng-focus
+- ng-keydown
+- ng-keypress
+- ng-keyup
+- ng-mousedown
+- ng-mouseenter
+- ng-mouseleave
+- ng-mousemove
+- ng-mouseover
+- ng-mouseup
+- ng-paste
+
+_Ví dụ 1:_ Mỗi lần click vào 1 button thì hiển thị ra số lần đã click
+
+[ng-click](https://github.com/ntaback26/angular-tutorial/blob/master/directive/ng-click.html)
+
