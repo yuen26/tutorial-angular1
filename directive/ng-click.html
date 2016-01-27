@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+</head>
+<body ng-app="myApp" ng-init="count=0">
+	<div ng-controller="MyCtrl">
+		Số lần đã click: <span ng-bind="count"></span><br />
+		<button ng-click="click()">Click me!</button>
+	</div>
+
+	<script type="text/javascript">
+		var app = angular.module('myApp', []);
+		app.controller('MyCtrl', ['$scope', function($scope) {
+			$scope.click = function() {
+				$scope.count++;
+			}
+		}]);
+	</script>
+</body>
+</html>
