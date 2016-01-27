@@ -246,3 +246,14 @@ Form có các thuộc tính state sau:
 Thuộc tính state của form có dạng: <kbd>formName.propertyName</kbd>
 
 Dựa trên các state, AngularJS sẽ thêm vào form và input các class CSS tương ứng
+
+### Ví dụ
+
+_Ví dụ 1:_ Xây dựng chương trình nhập danh sách sinh viên và lưu vào trong một mảng rồi in ra ngoài trình duyệt
+
+[list](https://github.com/ntaback26/angular-tutorial/blob/master/form/list.html)
+**Giải thích:** Trong ví dụ này, ta bắt sự kiện submit form bằng cách sử dụng directive ng-submit ở thẻ form
+
+_Ví dụ 2:_  Tạo 2 input và cho người dùng nhâp vào 2 số, validate bắt buộc nhập vào phải là số, đồng thời xuất ra màn hình kết quả cộng trừ nhân chia của hai số đó.
+
+[calculator](https://github.com/ntaback26/angular-tutorial/blob/master/form/calculator.html)
