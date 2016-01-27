@@ -203,4 +203,16 @@ _Ví dụ 2:_ Hiển thị ra 1 menu dọc khi click vào 1 button, và ẩn men
 [toggle](https://github.com/ntaback26/angular-tutorial/blob/master/directive/toggle.html)
 
 
+### Form
+1. Form submit
+Để submit 1 form trong AngularJS, ta có thể sử dụng 2 cách sau:
+- Sử dụng directive **ng-submit** trong thẻ form
+- Sử dụng directive **ng-click** ở thẻ input hoặc button có <kbd>type="submit"</kbd> đầu tiên
+Một vài lưu ý khi submit form:
+Lưu ý với các bạn rằng:
+- Nếu form chỉ có một thẻ input duy nhất thì form sẽ submit khi chúng ta nhấn Enter vào thẻ input đó
+- Nếu form có hai thẻ input trở lên và không có button submit hoặc (input[type="submit"]) thì khi chúng ta nhấn Enter thì form sẽ không submit
+- Nếu form có một hoặc nhiều field và có một hoặc nhiều button submit hoặc (input[type="submit"]) thì khi chúng ta nhấn Enter vào một field bất kỳ, AngularJS sẽ kích hoạt sự kiện Click trên button hoặc input đầu tiên (ng-click)và sự kiện submit của form (ng-submit)
+
+
 
