@@ -67,6 +67,9 @@ Nếu như $scope chỉ ảnh hưởng trong phạm vi của controller (tính t
 
 Trong ví dụ trên, ta có thể thấy nếu như $rootScope và $scope có một thuộc tính cùng tên, thì ở trong div khai báo ng-controller, thuộc tính của $scope sẽ ghi đè thuộc tính của $rootScope, nhưng ở bên ngoài div đó, thuộc tính của $rootScope sẽ không bị ghi đè.
 
+
+
+
 ## Directive
 ### Khái niệm
 AngularJS cho phép chúng ta mở rộng các phần tử HTML bằng cách thêm các thuộc tính mới gọi là _directive_. Bên cạnh những directive mà AngularJS đã cung cấp sẵn thì chúng ta cũng có thể tự định nghĩa các directive của riêng mình. 
