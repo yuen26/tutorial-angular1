@@ -272,7 +272,7 @@ _Ví dụ 3:_ Xây dựng 1 form đăng ký với các yêu cầu sau:
 
 ## Filter
 Filter (bộ lọc) cho phép chúng ta định dạng dữ liệu để hiển thị trên giao diện người dùng mà không thay đổi định dạng ban đầu.
-Cú pháp của Filter: `{{expression | filterName:parameter }}`
+Cú pháp của Filter: `{{expression | filterName1:parameter1 | filterName2:parameter2 | ... }}`
 Danh sách các Filter:
 - currency: chuyển một số thành định dạng tiền tệ.
 - date: chuyển dữ liệu kiểu date thành string theo một định dạng nào đó.
@@ -280,7 +280,13 @@ Danh sách các Filter:
 - json: định dạng 1 Javascript object thành 1 JSON string.
 - limitTo: trả về 1 mảng mới từ mảng ban đầu
 - lowercase: chuyển 1 chuỗi về chữ thường.
-- number: chuyển 1 số thành 1 chuỗi
+- number: định dạng 1 số giống hàm number_format trong PHP
 - orderBy: sắp xếp mảng theo biểu thức.
 - uppercase: chuyển 1 chuỗi thành chữ in hoa.
 
+_Ví dụ:_ Xây dựng 1 trang tìm kiếm truyện tranh gồm các yêu cầu sau:
+- Tạo 1 danh sách truyện tranh, mỗi truyện chứa các thông tin: ID, tên truyện, số chapter.
+- Sắp xếp và hiển thị danh sách truyện theo tên truyện. Sắp xếp theo alphabet.
+- Tạo 4 input để tìm kiếm truyện theo All (tất cả các thông tin), theo ID, theo tên truyện, theo số chapter. Nếu không có truyện thỏa mãn thì thông báo không tìm thấy kết quả.
+
+[Search comic app](https://github.com/ntaback26/angular-tutorial/blob/master/filter/comic.html)
