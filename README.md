@@ -161,6 +161,6 @@ _Ví dụ:_ Cho 2 thẻ input nhập vào firstName và lastName, giá trị nh�
 
 ### DOM Manipulation
 Trong AngularJS, chúng ta có 3 directive để liên kết dữ liệu của ứng dụng với thuộc tính của các phần tử HTML DOM là: **ng-disabled**, **ng-show** và **ng-hide**. Nếu biểu thức bên trong 3 thuộc tính này mà **true** thì các phần tử HTML DOM sẽ thay đổi như sau:
-- Với phần tử có chứa thuộc tính ng-disabled: sẽ được thêm thuộc tính <kbd>disabled="disabled"<kbd>
+- Với phần tử có chứa thuộc tính ng-disabled: sẽ được thêm thuộc tính <kbd>disabled="disabled"</kbd>
 - Với phần tử có chứa thuộc tính ng-show: sẽ xóa đi class <kbd>.ng-hide</kbd>
 - Với phần tử có chứa thuộc tính ng-hide: sẽ thêm vào class <kbd>.ng-hide</kbd>
