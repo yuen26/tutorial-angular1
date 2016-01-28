@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+	<div ng-controller="HelloCtrl">
+		<p>{{ hello.factory }}</p>
+		<p>{{ hello.service }}</p>
+	</div>
+	<div ng-controller="GoodbyeCtrl">
+		<p>{{ goodbye.factory }}</p>
+		<p>{{ goodbye.service }}</p>
+	</div>
+
+	<script type="text/javascript">
+	var app = angular.module('myApp', []);
+
+	app.controller('HelloCtrl', function($scope, MyFactory, MyService) {
+		$scope.hello = {
+			factory: MyFactory.sayHello('admin'),
+			service: MyService.sayHello('admin')
+		};
+	});
+
+	app.controller('GoodbyeCtrl', function($scope, MyFactory, MyService) {
+		$scope.goodbye = {
+			factory: MyFactory.sayGoodbye('admin'),
+			service: MyService.sayGoodbye('admin')
+		};
+	});
+
+	app.service('MyService', function() {
+		this.sayHello = function(text) {
+			return 'Service say: "Hello ' + text + '"';
+		};
+		this.sayGoodbye = function(text) {
+			return 'Service say: "Goodbye ' + text + '"';
+		};
+	});
+
+	app.factory('MyFactory', function() {
+		return {
+			sayHello: function(text) {
+				return 'Factory say: "Hello ' + text + '"';
+			},
+			sayGoodbye: function(text) {
+				return 'Factory say: "Goodbye ' + text + '"';
+			}
+		};
+	});
+	</script>
+</body>
+</html>
