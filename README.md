@@ -337,7 +337,7 @@ _Ví dụ 1:_ Ví dụ này giúp chúng ta phân biệt cách sử dụng 2 ph�
 
 [Service & Factory](https://github.com/ntaback26/angular-tutorial/blob/master/service/service%26factory.html)
 
-_Ví dụ 2:_ Tạo 1 factory có nhiệm vụ tính bình phương của 1 số. 1 service in ra kết quả bình phương của 1 số. 
+_Ví dụ 2:_ Tạo 1 factory có nhiệm vụ tính bình phương của 1 số. 1 service thông báo kết quả bình phương của 1 số. 
 
 [Bình phương](https://github.com/ntaback26/angular-tutorial/blob/master/service/square.html)
 
