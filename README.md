@@ -251,13 +251,13 @@ Dựa trên các state, AngularJS sẽ thêm vào form và input các class CSS 
 
 _Ví dụ 1:_ Xây dựng chương trình nhập danh sách sinh viên và lưu vào trong một mảng rồi in ra ngoài trình duyệt
 
-[Student list](https://github.com/ntaback26/angular-tutorial/blob/master/form/list.html)
+[Student List](https://github.com/ntaback26/angular-tutorial/blob/master/form/list.html)
 
 **Giải thích:** Trong ví dụ này, ta bắt sự kiện submit form bằng cách sử dụng directive ng-submit ở thẻ form
 
 _Ví dụ 2:_  Tạo 2 input và cho người dùng nhâp vào 2 số, validate bắt buộc nhập vào phải là số, đồng thời xuất ra màn hình kết quả cộng trừ nhân chia của hai số đó.
 
-[calculator](https://github.com/ntaback26/angular-tutorial/blob/master/form/calculator.html)
+[Calculator](https://github.com/ntaback26/angular-tutorial/blob/master/form/calculator.html)
 
 _Ví dụ 3:_ Xây dựng 1 form đăng ký với các yêu cầu sau:
 - Input Username bắt buộc nhập, và có min length phải là 3 ký tự và max length là 8 ký tự, chỉ được chứa chữ và số
@@ -266,7 +266,7 @@ _Ví dụ 3:_ Xây dựng 1 form đăng ký với các yêu cầu sau:
 - Nếu các điều kiện validate không thỏa, thì sẽ khóa chức năng submit của Form, đồng thời xuất thông báo lỗi bên cạnh input bị lỗi
 - Nếu thỏa các điều kiện validate, sẽ hiện ra thông báo đăng ký thành công
 
-[Register form validation](https://github.com/ntaback26/angular-tutorial/blob/master/form/validation.html)
+[Register Form Validation](https://github.com/ntaback26/angular-tutorial/blob/master/form/validation.html)
 
 **Giải thích:** Ở trong thẻ form, ta thêm thuộc tính novalidate để ngăn HTML5 validation 
 
@@ -289,4 +289,15 @@ _Ví dụ:_ Xây dựng 1 trang tìm kiếm truyện tranh gồm các yêu cầu
 - Sắp xếp và hiển thị danh sách truyện theo tên truyện. Sắp xếp theo alphabet.
 - Tạo 4 input để tìm kiếm truyện theo All (tất cả các thông tin), theo ID, theo tên truyện, theo số chapter. Nếu không có truyện thỏa mãn thì thông báo không tìm thấy kết quả.
 
-[Search comic app](https://github.com/ntaback26/angular-tutorial/blob/master/filter/comic.html)
+[Search Comic App](https://github.com/ntaback26/angular-tutorial/blob/master/filter/comic.html)
+
+## Service
+Trong AngularJS, service là một hàm hoặc một đối tượng thực hiện một nhiệm vụ cụ thể nào đó. AngularJS đã xây dựng sẵn 27 service cho chúng ta, ví dụ như: $location, $http, $window, $timeout, $interval, ...
+
+### Định nghĩa service mới
+Để tạo một service mới, chúng ta có thể làm theo 2 cách:
+- Sử dụng phương thức factory
+- Sử dụng phương thức service
+
+**1. Sử dụng phương thức factory**
+
