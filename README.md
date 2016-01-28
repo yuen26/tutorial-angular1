@@ -300,6 +300,7 @@ Trong AngularJS, service là một hàm hoặc một đối tượng thực hi�
 - Sử dụng phương thức factory
 
 **1. Sử dụng phương thức service**
+
 Cách định nghĩa:
 ````
 app.service('MyService', function () {
@@ -315,7 +316,8 @@ app.controller('MyController', function (MyService) {
 });
 ````
 
-**2. Sử dụng phương thức factory**````
+**2. Sử dụng phương thức factory**
+
 Cách định nghĩa:
 ````
 app.service('MyFactory', function () {
@@ -328,7 +330,7 @@ app.service('MyFactory', function () {
 ````
 Sau khi định nghĩa, chúng ta có thể sử dụng ở tất controller, directive và filter:
 ````
-app.controller('MyController', function (MyFactory) {
+a.controller('MyController', function (MyFactory) {
   MyFactory.sayHello(); // logs 'hello'
 });
 ````
@@ -340,4 +342,17 @@ _Ví dụ 1:_ Ví dụ này giúp chúng ta phân biệt cách sử dụng 2 ph�
 _Ví dụ 2:_ Tạo 1 factory có nhiệm vụ tính bình phương của 1 số. 1 service thông báo kết quả bình phương của 1 số. 
 
 [Bình phương](https://github.com/ntaback26/angular-tutorial/blob/master/service/square.html)
+
+### $http
+Service $http có nhiệm vụ gửi, trao đổi thông tin với server thông qua ajax. $http sẽ gửi lên server 1 request và trả về 1 response. 
+
+$http có 7 shorcut method:
+- .delete()
+- .get()
+- .head()
+- .jsonp()
+- .patch()
+- .post()
+- .put()
+
 
