@@ -346,7 +346,7 @@ _Ví dụ 2:_ Tạo 1 factory có nhiệm vụ tính bình phương của 1 số
 ### $http
 Service $http có nhiệm vụ gửi, trao đổi thông tin với server thông qua ajax. $http sẽ gửi lên server 1 request và trả về 1 response. 
 
-$http có 7 shorcut method:
+$http có 7 shortcut method:
 - .delete()
 - .get()
 - .head()
@@ -354,5 +354,8 @@ $http có 7 shorcut method:
 - .patch()
 - .post()
 - .put()
+
+**1. $http.get**
+
 
 
