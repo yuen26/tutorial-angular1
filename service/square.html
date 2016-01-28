@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+	<div ng-controller="MyCtrl">
+		<input type="number" ng-model="number" /> 
+		<button ng-click="click()">X<sup>2</sup></button><br />
+	</div>
+
+	<script type="text/javascript">
+		var app = angular.module('myApp', []);
+
+		app.controller('MyCtrl', function($scope, ResultService) {
+			$scope.click = function() {
+				ResultService.showResult($scope.number);
+			}
+		});
+
+		app.factory('CalcFactory', function() {
+			return {
+				calc: function(number) {
+					return number * number;
+				}
+			};
+		});
+
+		app.service('ResultService', function($window, CalcFactory) {
+			this.showResult = function(number) {
+				$window.alert(CalcFactory.calc(number));
+			};
+		});
+	</script>
+</body>
+</html>
