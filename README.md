@@ -296,8 +296,48 @@ Trong AngularJS, service là một hàm hoặc một đối tượng thực hi�
 
 ### Định nghĩa service mới
 Để tạo một service mới, chúng ta có thể làm theo 2 cách:
-- Sử dụng phương thức factory
 - Sử dụng phương thức service
+- Sử dụng phương thức factory
 
-**1. Sử dụng phương thức factory**
+**1. Sử dụng phương thức service**
+Cách định nghĩa:
+````
+app.service('MyService', function () {
+  this.sayHello = function () {
+    console.log('hello');
+  };
+});
+````
+Sau khi định nghĩa, chúng ta có thể sử dụng ở tất controller, directive và filter:
+````
+app.controller('MyController', function (MyService) {
+  MyService.sayHello(); // logs 'hello'
+});
+````
+
+**2. Sử dụng phương thức factory**````
+Cách định nghĩa:
+````
+app.service('MyFactory', function () {
+  return {
+  	sayHello: function () {
+    	console.log('hello');
+  	}
+  };
+});
+````
+Sau khi định nghĩa, chúng ta có thể sử dụng ở tất controller, directive và filter:
+````
+app.controller('MyController', function (MyFactory) {
+  MyFactory.sayHello(); // logs 'hello'
+});
+````
+
+_Ví dụ 1:_ Ví dụ này giúp chúng ta phân biệt cách sử dụng 2 phương thức trên
+
+[Service & Factory](https://github.com/ntaback26/angular-tutorial/blob/master/service/service%26factory.html)
+
+_Ví dụ 2:_ Tạo 1 factory có nhiệm vụ tính bình phương của 1 số. 1 service in ra kết quả bình phương của 1 số. 
+
+[Bình phương](https://github.com/ntaback26/angular-tutorial/blob/master/service/square.html)
 
