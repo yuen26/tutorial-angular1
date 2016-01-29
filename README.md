@@ -438,3 +438,9 @@ _Ví dụ:_ Xây dựng 1 ứng dụng web gồm 3 page: home, about và contact
 URL trên browser lúc này sẽ có dạng <kbd>http:localhost/app/index.html#/about/123</kbd> chẳng hạn.
 
 Để lấy được tham số trong controller, ta sử dụng **`$routeParams.tên_tham_số`**
+
+_Ví dụ:_ Phát triển tiếp [$http.get demo](https://github.com/ntaback26/angular-tutorial/tree/master/service/http.get): thêm 1 cột chứa đường link xem chi tiết truyện tranh, click vào link này sẽ hiển thị thông tin chi tiết của truyện đó (ID, name, chapter)
+
+[Show comic detail](https://github.com/ntaback26/angular-tutorial/tree/master/route/params)
+
+**Giải thích:** Trong DetailCtrl, sau khi lấy được tham số id, ta sẽ lấy object trong mảng comics mà có id như thế bằng cách sử dụng hàm <kbd>filter</kbd>.
