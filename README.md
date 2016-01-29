@@ -371,3 +371,7 @@ $http.get(url).then(function(response) {
     // .statusText: kiểu string
 });
 ````
+
+_Ví dụ 1:_ Tạo 1 file server.php trả về file index.html danh sách truyện tranh (dữ liệu lấy ở bài Search Comic App), ở trang index.html hiển thị danh sách truyện tranh đó.
+
+[$http.get demo](https://github.com/ntaback26/angular-tutorial/tree/master/service/http.get)
