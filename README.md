@@ -355,6 +355,8 @@ $http có 7 shortcut method:
 - .post()
 - .put()
 
+**Chú ý:** Để chạy những ví dụ trong phần này, ta phải bỏ các file vào thư mục htdocs, rồi chạy trên localhost.
+
 **1. $http.get**
 Method này sẽ gửi lên server 1 http GET request
 ````
@@ -371,7 +373,18 @@ $http.get(url).then(function(response) {
     // .statusText: kiểu string
 });
 ````
-
-_Ví dụ 1:_ Tạo 1 file server.php trả về file index.html danh sách truyện tranh (dữ liệu lấy ở bài Search Comic App), ở trang index.html hiển thị danh sách truyện tranh đó.
+_Ví dụ:_ Tạo 1 file server.php trả về file index.html danh sách truyện tranh (dữ liệu lấy ở bài Search Comic App), ở trang index.html hiển thị danh sách truyện tranh đó.
 
 [$http.get demo](https://github.com/ntaback26/angular-tutorial/tree/master/service/http.get)
+
+**2. $http.post**
+Cú pháp: 
+````
+$http.get(url, data, config).then(function(response) {
+	// data: dữ liệu gửi lên server, kiểu Object. Server sẽ nhận được dữ liệu kiểu JSON
+    // response: tương tự như trong $http.get, điểm khác là response.data không nhất thiết phải là kiểu JSON
+});
+````
+_Ví dụ:_ Tạo 1 file index.html cho phép người dùng đăng nhập. Nếu username = "admin" và password = "123456" thì thông báo đăng nhập thành công, ngược lại thông báo sai username hoặc password (thông báo hiển thị ngay dưới form đăng nhập)
+ demo
+
