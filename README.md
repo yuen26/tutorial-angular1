@@ -356,6 +356,18 @@ $http có 7 shortcut method:
 - .put()
 
 **1. $http.get**
-
-
-
+Method này sẽ gửi lên server 1 http GET request
+````
+$http.get(url) // url: đường dẫn tới file server
+````
+$http.get(url) sẽ trả về 1 HttpPromise object chứa các phương thức xử lý response của GET request:
+````
+$http.get(url).then(function(response) {
+	// response là 1 object gồm các thuộc tính:
+    // .config
+    // .data: dữ liệu này đọc từ server. Server bắt buộc phải trả về client dữ liệu kiểu JSON
+    // .headers
+    // .status: kiểu number
+    // .statusText: kiểu string
+});
+````
