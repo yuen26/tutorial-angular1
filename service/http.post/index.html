@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+	<div ng-controller="MyCtrl">
+		<form>
+			Username: <input type="text" ng-model="username" /><br />
+			Password: <input type="password" ng-model="password" /><br />
+			<button ng-click="login()">Login</button>
+		</form>
+		{{ message }}
+	</div>
+
+	<script type="text/javascript">
+		var app = angular.module('myApp', []);
+		app.controller('MyCtrl', function($scope, $http) {
+			$scope.login = function() {
+				var url = 'login.php';
+	            var data = {
+	            	username: $scope.username,
+	            	password: $scope.password
+	            };
+	            var config = {
+	            	header: {'Content-Type': 'application/x-www-form-urlencoded;charset:utf-8;'}
+	            };
+	            $http.post(url, data, config).then(function(response) {
+	            	$scope.message = response.data;
+	            });
+			}
+		});
+	</script>
+</html>
