@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.min.js"></script>
+</head>
+<body ng-app="myApp">
+	<a href="#home">Home</a> <a href="#about">About</a> <a href="#contact">Contact</a> 
+
+	<div ng-view></div>
+
+	<script type="text/javascript">
+		var app = angular.module('myApp', ['ngRoute']);
+
+		app.config(['$routeProvider', function($routeProvider) {
+			$routeProvider
+			// route for the home page
+			.when('/home', {
+				templateUrl: 'templates/home.html',
+				controller: 'HomeCtrl'
+			})
+			// route for the about page
+			.when('/about', {
+				templateUrl: 'templates/about.html',
+				controller: 'AboutCtrl'
+			})
+			// route for the contact page
+			.when('/contact', {
+				templateUrl: 'templates/contact.html',
+				controller: 'ContactCtrl'
+			})
+			.otherwise({
+				redirectTo: '/home'
+			})
+		}]);
+
+		app.controller('HomeCtrl', ['$scope', function($scope) {
+			$scope.message = "Đây là trang Home";
+		}]);
+
+		app.controller('AboutCtrl', ['$scope', function($scope) {
+			$scope.message = "Đây là trang About";
+		}]);
+
+		app.controller('ContactCtrl', ['$scope', function($scope) {
+			$scope.message = "Đây là trang Contact";
+		}]);
+
+	</script>
+</body>
+</html>
