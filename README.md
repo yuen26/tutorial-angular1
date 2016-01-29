@@ -421,5 +421,7 @@ app.config(function($routeProvider) {
 ````
 Giả sử khi gõ trên trình duyệt địa chỉ http://localhost/app/index.html#view1, AngularJS sẽ load view1.html đồng thời triệu gọi FirstController. `otherwise` dùng để định nghĩa route mặc định.
 
+Để hiển thị View, ta sử dụng directive <kbd>ng-view</kbd>: `<div ng-view></div>` hoặc `<ng-view></ng-view>`
+
 _Ví dụ:_ Xây dựng 1 ứng dụng web gồm 3 page: home, about và contact
 
