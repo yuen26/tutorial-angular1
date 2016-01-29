@@ -389,3 +389,37 @@ _Ví dụ:_ Tạo 1 file index.html cho phép người dùng đăng nhập. Nế
 
 [$http.post demo](https://github.com/ntaback26/angular-tutorial/tree/master/service/http.post)
 
+
+## Route
+
+### Overview
+AngularJS giúp chúng ta xây dựng 1 Single Page Application (SPA): ứng dụng sẽ được chia làm nhiều View mang nội dung khác nhau, khi chuyển View ta không cần phải load lại page. Mỗi View như thế sẽ được quản lý bởi 1 **route**. Mỗi một route được liên kết với 1 View và 1 Controller riêng. Khi ứng dụng được load, nó sẽ xác định route (phần đằng sau dấu # ở trên URL) để quyết định template HTML nào sẽ được show ra. 
+````
+http://demo.com/index.html#View1
+http://demo.com/index.html#View2
+http://demo.com/index.html#View3
+http://demo.com/index.html#View4
+````
+Để sử dụng route, ta sẽ cấu hình thông qua <kbd>$routeProvider</kbd> (provider của service $route):
+````
+var app = angular.module('myApp', ['ngRoute']);
+app.config(function($routeProvider) {
+  $routeProvider
+  	.when('/view1',
+  	{
+      templateUrl: 'templates/view1.html'	
+      controller: 'FirstController',
+  	})
+  	.when('/view2',
+  	{
+      templateUrl: 'templates/view2.html'	
+      controller: 'SecondController',
+  	})
+   	...
+  	.otherwise({redirectTo: '/view1'});
+  });
+````
+Giả sử khi gõ trên trình duyệt địa chỉ http://localhost/app/index.html#view1, AngularJS sẽ load view1.html đồng thời triệu gọi FirstController. `otherwise` dùng để định nghĩa route mặc định.
+
+_Ví dụ:_ Xây dựng 1 ứng dụng web gồm 3 page: home, about và contact
+
