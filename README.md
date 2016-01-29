@@ -400,7 +400,7 @@ http://demo.com/index.html#View2
 http://demo.com/index.html#View3
 http://demo.com/index.html#View4
 ````
-Để sử dụng route, ta sẽ cấu hình thông qua <kbd>$routeProvider</kbd> (provider của service $route):
+Để sử dụng route, ta cần phải nạp thư viện <kbd>angular-route.min.js</kbd> và cấu hình thông qua <kbd>$routeProvider</kbd> (provider của service $route):
 ````
 var app = angular.module('myApp', ['ngRoute']);
 app.config(function($routeProvider) {
@@ -421,7 +421,7 @@ app.config(function($routeProvider) {
 ````
 Giả sử khi gõ trên trình duyệt địa chỉ http://localhost/app/index.html#view1, AngularJS sẽ load view1.html đồng thời triệu gọi FirstController. `otherwise` dùng để định nghĩa route mặc định.
 
-Để hiển thị View, ta sử dụng directive <kbd>ng-view</kbd>: `<div ng-view></div>` hoặc `<ng-view></ng-view>`
+Để hiển thị View, ta sử dụng directive <kbd>ng-view</kbd>: `<div ng-view></div>` hoặc `<ng-view></ng-view>`.
 
 _Ví dụ:_ Xây dựng 1 ứng dụng web gồm 3 page: home, about và contact
 
