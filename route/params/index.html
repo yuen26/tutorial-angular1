@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	table, th , td {
+		border: 1px solid grey;
+		border-collapse: collapse;
+		padding: 5px;
+	}
+
+	table tr:nth-child(odd) {
+		background-color: #f2f2f2;
+	}
+
+	table tr:nth-child(even) {
+		background-color: #ffffff;
+	}
+    </style>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.min.js"></script>
+</head>
+<body ng-app="myApp">
+	<div ng-controller="MyCtrl">
+		<table>
+            <tr>
+               <th>ID</th>
+               <th>Name</th>
+               <th>Chapter</th>
+               <th></th>
+            </tr>
+         
+            <tr ng-repeat="comic in comics">
+               <td>{{ comic.id }}</td>
+               <td>{{ comic.name }}</td>
+               <td>{{ comic.chapter }}</td>
+               <td><a href="#showDetail/{{ comic.id }}">Show detail</a></td>
+            </tr>
+         </table>
+
+         <!-- Detail view -->
+         <div ng-view></div>
+	</div>
+
+	<script type="text/javascript">
+		var app = angular.module('myApp', ['ngRoute']);
+
+		app.config(['$routeProvider', function($routeProvider) {
+			$routeProvider
+			.when('/showDetail/:id', {
+				templateUrl: 'templates/detail.html',
+				controller: 'DetailCtrl'
+			})
+		}]);
+
+		app.controller('MyCtrl', function($scope, $http) {
+			var url = 'server.php';
+			$http.get(url).then(function(response) {
+				$scope.comics = response.data;
+			});
+		});
+
+		app.controller('DetailCtrl', function($scope, $routeParams) {
+			var id = $routeParams.id;
+			var result = $scope.comics.filter(function(obj) {
+				return obj.id == id;
+			});
+			$scope.detail = {
+				id: id,
+				name: result[0].name,
+				chapter: result[0].chapter
+			};
+		});
+	</script>
+</body>
+</html>
