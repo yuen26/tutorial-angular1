@@ -443,4 +443,4 @@ _Ví dụ:_ Phát triển tiếp [$http.get demo](https://github.com/ntaback26/a
 
 [Show comic detail](https://github.com/ntaback26/angular-tutorial/tree/master/route/params)
 
-**Giải thích:** Trong DetailCtrl, sau khi lấy được tham số id, ta sẽ lấy object trong mảng comics mà có id như thế bằng cách sử dụng hàm <kbd>filter</kbd>.
+**Giải thích:** Trong DetailCtrl, sau khi lấy được tham số id, ta sẽ lấy object trong mảng comics mà có id như thế bằng cách sử dụng hàm <kbd>filter</kbd> của Javascript.
