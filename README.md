@@ -386,5 +386,6 @@ $http.get(url, data, config).then(function(response) {
 });
 ````
 _Ví dụ:_ Tạo 1 file index.html cho phép người dùng đăng nhập. Nếu username = "admin" và password = "123456" thì thông báo đăng nhập thành công, ngược lại thông báo sai username hoặc password (thông báo hiển thị ngay dưới form đăng nhập)
- demo
+
+[https://github.com/ntaback26/angular-tutorial/tree/master/service/http.post]($http.post demo)
 
