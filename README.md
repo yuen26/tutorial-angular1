@@ -425,3 +425,16 @@ Giả sử khi gõ trên trình duyệt địa chỉ http://localhost/app/index.
 
 _Ví dụ:_ Xây dựng 1 ứng dụng web gồm 3 page: home, about và contact
 
+[Overview demo](https://github.com/ntaback26/angular-tutorial/tree/master/route/overview)
+
+### Truyền tham số 
+Để định nghĩa 1 route có truyền tham số trên URL, thì ta chỉ cần thêm `/:tên_tham_số` ở templateUrl:
+````
+.when('/about/:id', {
+  templateUrl: 'templates/about.html',
+  controller: 'AboutCtrl'
+})
+````
+URL trên browser lúc này sẽ có dạng <kbd>http:localhost/app/index.html#/about/123</kbd> chẳng hạn.
+
+Để lấy được tham số trong controller, ta sử dụng **`$routeParams.tên_tham_số`**
