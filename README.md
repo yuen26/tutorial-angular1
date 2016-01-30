@@ -358,6 +358,7 @@ $http có 7 shortcut method:
 **Chú ý:** Để chạy những ví dụ trong phần này, ta phải bỏ các file vào thư mục htdocs, rồi chạy trên localhost.
 
 **1. $http.get**
+
 Method này sẽ gửi lên server 1 http GET request
 ````
 $http.get(url) // url: đường dẫn tới file server
@@ -378,6 +379,7 @@ _Ví dụ:_ Tạo 1 file server.php trả về file index.html danh sách truy�
 [$http.get demo](https://github.com/ntaback26/angular-tutorial/tree/master/service/http.get)
 
 **2. $http.post**
+
 Cú pháp: 
 ````
 $http.get(url, data, config).then(function(response) {
