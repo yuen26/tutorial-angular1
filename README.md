@@ -31,7 +31,7 @@ Mối liên hệ giữa các thành phần trong AngularJS <br />
 AngularJS đồng bộ dữ liệu giữa ứng dụng với HTML bằng cách sử dụng _expression_. Hiểu 1 cách đơn giản, expression là dữ liệu chúng ta muốn hiển thị ra màn hình. Dữ liệu ở đây có thể là số, chuỗi, phần tử của mảng hoặc thuộc tính của đối tượng... 
 Expression được viết bên trong cặp dấu {{ }} 
 
-[Demo Expression](https://github.com/ntaback26/angular-tutorial/blob/master/expression.html)
+[Demo expression](https://github.com/ntaback26/angular-tutorial/blob/master/expression/expression.html)
 
 **Giải thích:** thuộc tính <kbd>ng-app</kbd> ở thẻ body là thuộc tính của AngularJS. Nó đánh dấu vị trí mà code AngularJS bắt đầu có hiệu lực. Thuộc tính <kbd>ng-init</kbd> có nhiệm vụ khởi tạo giá trị cho các biến. ng-app và ng-init được gọi là _directive (điều hướng)_
 
