@@ -152,7 +152,7 @@ Trong [ví dụ 1](https://github.com/ntaback26/angular-tutorial/blob/master/dir
 
 Directive này cho phép chúng ta in ra 1 đoạn mã HTML, điều mà ta không thể làm với ng-bind. Khi sử dụng ng-bind-html, ta cần phải thêm thư viện [sanitize](http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-sanitize.js)
 
-_Ví dụ:_ Cho 1 thẻ input, nhập vào 1 đường link thì đường link đó sẽ hiện ra.
+_Ví dụ:_ Cho 1 thẻ input, nhập vào 1 thẻ <a> thì thẻ <a> đó sẽ hiện ra.
 
 [ng-bind-html](https://github.com/ntaback26/angular-tutorial/blob/master/directive/ng-bind-html.html)
 
