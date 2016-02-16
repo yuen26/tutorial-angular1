@@ -202,7 +202,7 @@ Danh sách các event directive trong angular:
 
 _Ví dụ 1:_ Mỗi lần click vào 1 button thì hiển thị ra số lần đã click
 
-[count](https://github.com/ntaback26/angular-tutorial/blob/master/directive/ng-click.html)
+[count](https://github.com/ntaback26/angular-tutorial/blob/master/directive/count.html)
 
 _Ví dụ 2:_ Hiển thị ra 1 menu dọc khi click vào 1 button, và ẩn menu đó đi khi click lần nữa.
 
