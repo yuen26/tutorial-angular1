@@ -309,7 +309,7 @@ app.service('MyService', function () {
   };
 });
 ````
-Sau khi định nghĩa, chúng ta có thể sử dụng ở tất controller, directive và filter:
+Sau khi định nghĩa, chúng ta có thể sử dụng ở tất cả controller, directive và filter:
 ````
 app.controller('MyController', function (MyService) {
   MyService.sayHello(); // logs 'hello'
