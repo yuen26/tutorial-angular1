@@ -320,7 +320,7 @@ app.controller('MyController', function (MyService) {
 
 Cách định nghĩa:
 ````
-app.service('MyFactory', function () {
+app.factory('MyFactory', function () {
   return {
   	sayHello: function () {
     	console.log('hello');
