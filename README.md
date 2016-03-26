@@ -124,7 +124,7 @@ _Ví dụ 2: Cho 1 thẻ input, kiểm tra xem giá trị nhập vào có phải
 
 **2. ng-model-options**
 ng-model-options dùng để cấu hình một số thông số liên quan tới ng-model. Khi ứng dụng được chạy lên thì ng-model-options sẽ thực thi trước và sau đó ng-model mới được tạo. Các thông số bao gồm:
-- updateOn: xác định thao tác nào (blur, default, kepress, ...) sẽ quyết định việc update $scope
+- updateOn: xác định thao tác nào (blur, default, keypress, ...) sẽ quyết định việc update $scope
 - debounce: xác định khoảng thời gian sau bao lâu (tính bằng millisecond) thì update $scope
 - getterSetter
 - allowInvalid
@@ -328,7 +328,7 @@ app.service('MyFactory', function () {
   };
 });
 ````
-Sau khi định nghĩa, chúng ta có thể sử dụng ở tất controller, directive và filter:
+Sau khi định nghĩa, chúng ta có thể sử dụng ở tất cả controller, directive và filter:
 ````
 a.controller('MyController', function (MyFactory) {
   MyFactory.sayHello(); // logs 'hello'
