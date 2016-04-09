@@ -15,7 +15,7 @@ Dưới đây là một số tính năng cốt lõi quan trọng của AngularJS
 - Routing: chuyển đổi giữa các action trong controller
 - MVW: Model-View-Whatever, từ MVW chúng ta có thể phát triển thành MVC Model-View-Controller hoặc là MVVM Model-View-ViewModel
 - Deep Linking (Liên kết sâu): cho phép bạn mã hóa trạng thái của ứng dụng trong các URL để nó có thể đánh dấu được với công cụ tìm kiếm.
-- Dependency Injection: liên kết, thống nhất các đối tượng và chắc năng.
+- Dependency Injection: liên kết, thống nhất các đối tượng và chức năng.
 
 Mối liên hệ giữa các thành phần trong AngularJS <br />
 <img src="https://s3.amazonaws.com/classconnection/362/flashcards/6692362/png/screen_shot_2014-12-23_at_70514_pm-14A7A42335A47DBBC08.png" width="400">
