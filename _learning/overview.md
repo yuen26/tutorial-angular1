@@ -13,8 +13,8 @@ SPA cho phép các view khác nhau được load vào trong một trang web. Ng�
 * Data Binding
 ...
 
-## Mối liên hệ giữa các thành phần
-<img src="http://imgur.com/Fkmt1zC" width="400">
+## Các thành phần chính trong AngularJS
+<img src="http://i.imgur.com/Fkmt1zC.png" width="400">
 
 ## Cài đặt
 Để sử dụng AngularJS trong 1 trang HTML, bạn cần phải khai báo đường dẫn tới file <kbd>angular.min.js</kbd>. Có 2 cách khai báo:
